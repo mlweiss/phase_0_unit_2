@@ -48,6 +48,7 @@ end
 def median(my_array)
 	length = my_array.size
 	sorted_array = my_array.sort
+
 	raise "Median not defined for an empty Array { iii }" unless length != 0
 	raise "Array should contain strings or numbers" unless my_array[0].class === ("String" || "Fixnum") || "Float"
 
@@ -65,3 +66,12 @@ end
 
 
 # 4. Reflection 
+
+# It took me some time to figure out a decent solution to the problem of when the Array has an even number
+# of String elements. I am not sure that I found the best solution, but it seems like returning the middle two 
+# strings is probably the most natural solution that I could think of. A lot of the thought process here was familiar
+# from a previous challenge that we had done from the previous week. 
+# I also decided to raise some errors in order to make the code a bit more universal, but one could 
+# really take it a lot further. For instance the code will still break if all of the object types in 
+# the list are not the same. This is a situation that we don't want the code to have to handle
+# so it should really be an error if the user tries to pass an Array like this.
