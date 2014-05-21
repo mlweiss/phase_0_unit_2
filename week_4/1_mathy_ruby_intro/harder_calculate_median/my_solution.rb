@@ -33,17 +33,34 @@ def median(my_array)
 
 	if (length % 2 == 0)
 		if my_array[0].class === 'String'
-			return (my_array.sort[length/2 -1] + ' ' + my_array.sort[length/2]) #returns middle two strings
+			return (sorted_array[length/2 -1] + ' ' + sorted_array[length/2]) #returns middle two strings
 		else 
-			return (my_array.sort[length/2 - 1] + my_array.sort[length/2]).to_f / 2 # returns the mean 
+			return (sorted_array[length/2 - 1] + sorted_array[length/2]).to_f / 2 # returns the mean 
 		end																			# of the middle two numbers					
 	else																		
-		return (my_array.sort[length/2])
+		return (sorted_array[length/2])
 	end
 end
 
 
 # 3. Refactored Solution
+
+def median(my_array)
+	length = my_array.size
+	sorted_array = my_array.sort
+	raise "Median not defined for an empty Array { iii }" unless length != 0
+	raise "Array should contain strings or numbers" unless my_array[0].class === ("String" || "Fixnum") || "Float"
+
+	if (length % 2 == 0)
+		if my_array[0].class === 'String'
+			return (sorted_array[length/2 -1] + ' ' + sorted_array[length/2]) 
+		else 
+			return (sorted_array[length/2 - 1] + sorted_array[length/2]).to_f / 2 
+		end																			
+	else																		
+		return (sorted_array[length/2])
+	end
+end
 
 
 
