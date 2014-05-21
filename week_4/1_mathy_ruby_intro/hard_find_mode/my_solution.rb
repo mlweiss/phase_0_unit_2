@@ -35,14 +35,20 @@ def mode(ary)
 	return mode
 end
 
-a = mode([4, 4, 5, 5, 6, 6, 6, 7, 5])
-print a
-
-
-
 
 # 3. Refactored Solution
 
+def mode(ary)
+	return ary.sort_by {|element| grep(element).length}.last
+end
 
 
 # 4. Reflection 
+
+# It took me some time to think of the first solution. It's a bit long, but readable.
+# It is inefficient however. I tried this using the count method for arrays, but by 
+# iterating over every element of the array I am being a bit redundant since I am 
+# counting a number of times. So in refactoring I wanted to try sorting the list
+# by the element that occured the most times. I found the array method sort_by 
+# and the method grep which searches for the element in the list. This is a much 
+# cleaner solution. 
