@@ -1,7 +1,7 @@
 # U2.W5: Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge Dylan Krause.
 
 # 2. Pseudocode
 
@@ -29,7 +29,6 @@
 # Don't forget to check on intialization for a card length
 # of exactly 16 digits
 
-
 class CreditCard
   def initialize(num)
     raise ArgumentError.new("Credit Card number should have 16 integers") if num.to_s.size != 16
@@ -53,8 +52,28 @@ class CreditCard
 end
 
 
+
 # 4. Refactored Solution
 
+class CreditCard
+  def initialize(num)
+    raise ArgumentError.new("Credit Card number should have 16 integers") if num.to_s.size != 16
+    @num = num.to_s
+  end
+    
+  def check_card
+    sum = 0
+    @num.split("").each_with_index {|digit, index| 
+      digit = digit.to_i
+      if index % 2 == 0
+        sum += (digit*2 >= 10 ? digit*2 % 10 + 1 : digit*2) 
+      else
+        sum += digit
+      end
+      }
+    sum % 10 == 0 
+    end
+end
 
 
 
@@ -62,9 +81,20 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
+begin
+  CreditCard.new(12345678912345678)
+  rescue ArgumentError => e
+  message = e.message 
+end 
+p message == "Credit Card number should have 16 integers"
 
+card = CreditCard.new(4408041234567893)
 
+p card.check_card == true 
 
+badcard = CreditCard.new(4408041234567892)
+
+p badcard.check_card == false
 
 
 # 5. Reflection 
