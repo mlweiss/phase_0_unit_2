@@ -119,8 +119,33 @@ p my_array_deletion_method(i_want_pets, "a") == ["I", 4, "pets", "but", "I", "on
 p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# 
-# 
-# 
-# 
-# 
+
+# What parts of your strategy worked? What problems did you face?
+# I approached this exercise by thinking about exactly what I wanted to do with the array or hash.
+# I would think about the steps that I needed to take and then try to find methods in the Ruby documentation
+# that would do what I was trying to do. Sometimes I would search for a certain method if I knew it from another
+# language but didn't know the Ruby syntax for it. I felt that the Ruby docs were often poorly written,
+# sometimes a method would be described and another method would be used in the example. And it was not
+# always noted that two methods did the same thing, like collect and map for arrays.
+# What questions did you have while coding? What resources did you find to help you answer them?
+# I often needed to find a lot of methods that were not familiar to me. I used google to search through
+# the Ruby docs for them.
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# I had a little trouble with the select method. It took me some time to realize that it just returned
+# the element if the block statement was true. I realized that what I really needed was an iterator 
+# that would return the value of the block for each element in the array or hash. Thinking about it
+# conceptually like this helped a lot in finding the right Ruby method.
+# Did you learn any new skills or tricks?
+# I learned a lot of new Ruby methods from this exercise. I am glad that I went ahead and did the whole
+# exercise myself.
+# How confident are you with each of the Learning Competencies?
+# After spending a fair amount of time reading through the docs I feel very confident with the methods
+# for Array and Hash and using iterators in Ruby. I also benefited from explaining it in depth.
+# Which parts of the challenge did you enjoy?
+# I enjoyed finding the method that I was looking for and seeing it so cleanly presented on one line.
+# I was glad that I was able to write every method as one line.
+# Which parts of the challenge did you find tedious?
+# I felt reading the docs was a bit tedious. They aren't really well written.
+# What did you learn about researching and explaining your research to others?
+# Unfortunately I did this exercise a bit out of sync with my accountability group, so I was unable
+# to discuss this with them.
