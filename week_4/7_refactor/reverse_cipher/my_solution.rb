@@ -81,3 +81,19 @@ p translate_to_cipher("I want cookies")
 
 # 5. Reflection 
 
+# What parts of your strategy worked? What problems did you face?
+# I reviewed the code and tried to determine the differences. It looks like
+# our code is very similar
+# What questions did you have while coding? What resources did you find to help you answer them?
+# This exercise did not require any coding.
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# This seemed to be pretty straightforward.
+# Did you learn any new skills or tricks?
+# The .sample, .zip, and . each_char methods were new to me and I was glad to see their
+# function presented in this exercise.
+# How confident are you with each of the Learning Competencies?
+# I am very confident with these competences.
+# Which parts of the challenge did you enjoy?
+# I enjoyed reviewing the code and seeing a clean version of this.
+# Which parts of the challenge did you find tedious?
+# Nothing too tedious.
