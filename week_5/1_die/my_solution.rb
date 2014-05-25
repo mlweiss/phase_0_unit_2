@@ -19,7 +19,7 @@
 
 class Die
   def initialize(sides)
-#  	raise ArgumentError.new('Die should have at least one side') if sides < 1
+  	raise ArgumentError.new('Die should have at least one side') if sides < 1
   	@sides = (1..sides).to_a  	
   end
   
