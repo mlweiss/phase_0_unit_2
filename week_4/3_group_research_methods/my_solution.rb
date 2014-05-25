@@ -24,7 +24,7 @@ end
 def my_hash_finding_method(my_hash, number)
 	
 	if !number.is_a?(Fixnum)
-		raise ArgumentError.new('The Second Argument Should be a Fixnum')
+raise ArgumentError.new('The Second Argument Should be a Fixnum')
 	end
 
 	return my_hash.select {|key, value| value == number}.keys
