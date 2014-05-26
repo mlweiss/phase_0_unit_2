@@ -55,7 +55,7 @@ p die.sides == sides # Number of sides should equal input number of sides
 p possible_values.include?(die.roll) # Does the die roll a number on the side?
 unique_rolls = Array.new(20000) { die.roll }.uniq.sort 
 p unique_rolls == possible_values # Is the rolling of the die random?
-p Die.instance_method(:initialize)
+
 
 
 
